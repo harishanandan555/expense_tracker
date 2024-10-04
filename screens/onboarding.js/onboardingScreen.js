@@ -129,7 +129,7 @@ const OnboardingScreen = ({ navigation }) => {
                     activeSlide == 2
                         ?
                         <Text
-                            onPress={() => navigation.push('/signin')}
+                            onPress={() => navigation.push('auth/sign-in')}
                             style={{ ...Fonts.lightPrimaryColor14Bold }}
                         >
                             Sign in

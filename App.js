@@ -5,6 +5,7 @@ import LoadingScreen from './components/loadingScreen';
 import SplashScreen from './screens/splashScreen';
 import OnboardingScreen from './screens/onboarding.js/onboardingScreen';
 import Signin from './screens/auth/signin';
+import Header from './screens/main/dashboard';
 const Stack = createStackNavigator();
 const App = () => {
     return (
@@ -21,7 +22,8 @@ const App = () => {
           <Stack.Screen name="Loading" component={LoadingScreen} />
           <Stack.Screen name="Splash" component={SplashScreen} options={{ ...TransitionPresets.DefaultTransition }} />
           <Stack.Screen name="Onboarding" component={OnboardingScreen} />
-          <Stack.Screen name="/signin" component={Signin} />
+          <Stack.Screen name="auth/sign-in" component={Signin} />
+          <Stack.Screen name="/dashboard" component={Header}/>
           </Stack.Navigator>
     </NavigationContainer>
     
